@@ -37,9 +37,11 @@ public class cad_usuario {
                     // NÁO EDITA USUÁRIO, QUANTO TENTADO, ELE APAGA O USUÁRIO
                         System.out.print("Posição do usuário: ");
                         int position = scan.nextInt();
+                        scan.nextLine();
+
                         System.out.print("Nome do usuário: ");
                         String nameEdit = scan.nextLine();
-                        scan.nextLine();
+
                         users.set(position, nameEdit);
                         System.out.println("Usuário editado com sucesso!");
                     break;
